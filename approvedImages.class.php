@@ -11,9 +11,12 @@
  * @license BSD http://www.opensource.org/licenses/bsd-license.php
  */
 
-class approvedImages  {
-
-
+class approvedImages  {  
+      /**
+   * Get approved images
+   *
+   *  @return array
+   */
     public function get_approved_images() {
         // images saved in txt file
      
@@ -31,6 +34,13 @@ class approvedImages  {
          }
          
     }
+    
+      /**
+   * Get approved images
+   *
+   * @param string $savedImages
+   * 
+   */
 
     function insert_approved_images($savedImages) {
 
