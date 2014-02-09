@@ -1,0 +1,181 @@
+/*
+Contains styles for web app
+*/
+/* 
+    Created on : 07-Feb-2014, 15:06:55
+    Author     : declan maher
+*/
+
+	body
+	{
+		
+		font: 100%/1.4 helvetica, arial, sans-serif;
+		color: #444;
+		background: #fff;
+	}
+	
+	h1, h2, h3, h4, h5, h6
+	{
+		margin: 0 0 .6em;
+		line-height: 1.1;
+	}
+	
+	h2, h3 { color: #fff; }
+	h2 { font-size: 150%; }
+	h3 { font-size: 120%; color:#444 }
+	#content h3 { clear: left; }
+	
+		
+        .main{
+            margin: 10px;            
+        }
+        
+         mainlogin{
+            margin: 200px;   
+            text-align:center;
+        }
+        
+	/* -----------------------------------
+	header
+	----------------------------------- */	
+	#header-container
+	{
+		float: left;
+		width: 100%;
+		background: #075385 repeat-x 0 100%;
+		border-bottom: 1px solid #cae298;
+	}
+	
+	.home #header-container { border-bottom: 1px solid #609dbc; }
+	
+	#header
+	{
+		margin: 0 auto;
+		padding: 0px 50px 20px 10px;
+	}
+	
+	
+	/* -----------------------------------
+	navigation
+	----------------------------------- */	
+	#navigation
+	{
+		margin: 38px 0;
+		font-size: 93.75%;
+		line-height: 1;
+	}
+	
+	#navigation ul
+	{
+		margin: 0;
+		padding: 0;
+	}
+	
+	#navigation li
+	{
+		margin: 0;
+		padding: 0;
+		display: inline;
+		list-style-type: none;
+	}
+	
+	#navigation a
+	{
+		display: block;
+		float: left;
+		margin: 0 0 0 2px;
+		padding: 6px 10px;
+		color: #fff;
+		font-weight: bold;
+		text-decoration: none;
+		-webkit-border-radius:  5px;
+		-moz-border-radius:  5px;
+		border-radius:  5px;
+	}
+
+	.home  #home-nav a
+	{
+		background: #6e9800;
+	}
+	
+	#navigation a:focus
+	{
+		color: #fff;
+		background: #000;
+	}
+	
+	#navigation a:hover
+	{
+		color: #003d5d;
+		background: #d5f1f9;
+		-webkit-transition-duration: 0.7s;
+		-webkit-transform: scale(1);
+	}
+	
+        img{
+            border: 2px;            
+        }
+        
+	
+     article, aside, figure, footer, header, hgroup, 
+    menu, nav, section  { 
+        display: block; }
+    ul {
+      width: 100%;
+    }
+    ul > li {
+      float: left;
+      list-style: none;
+      padding: 4px;
+    }
+  
+    
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:14px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:178px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.button:active {
+	position:relative;
+	top:1px;
+}
+
+#help{
+    margin-left: 20px;
+    padding: 5px 10px 5px 10px;
+}
