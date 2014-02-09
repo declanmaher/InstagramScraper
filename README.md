@@ -6,12 +6,12 @@ Need to create an API on Instagram account and get an API Key and Secret
 - further details here: http://instagram.com/developer/  
 Requirement to login using oAuth before you can return Instagram photos.
 
-Class Files ----------------------------
+Files
+
 
 instagram.class.php - this holds the functions that 
 
 approvedImages.class.php - this has functions to save the ApprovedImages and to display the Approved Images. Image paths are saved to a .txt file.
---------------------------------------------------------------
 
 home.php - This is where user approves images.
 
