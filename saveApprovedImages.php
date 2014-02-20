@@ -11,6 +11,7 @@ require 'approvedImages.class.php';
 	<div style='text-align:center'>
             <p></p>	
 <h3>Images Approved!</h3>
+
 <?php
  if(!empty($_POST['savedImages'])) { 
           
@@ -23,8 +24,7 @@ require 'approvedImages.class.php';
             
             echo 'Error occurred:'. $e->getMessage();
             die();
-        }
-        
+        }        
 
 } else
 {

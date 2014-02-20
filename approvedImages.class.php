@@ -23,14 +23,12 @@ class approvedImages  {
      if(is_readable('approvedImages.txt')){
      
      $lines = file("approvedImages.txt");     
-     return $lines;   
-
+     return $lines;  
          }
          
       else{
            throw new Exception("Error: The file for saving images is not readable.");
-      } 
-          
+      }          
          
     }
     
@@ -40,6 +38,7 @@ class approvedImages  {
    * @param string $savedImages
    * 
    */
+    
     function insert_approved_images($savedImages) {
 
          if(!empty($savedImages)) { 
