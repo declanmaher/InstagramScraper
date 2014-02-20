@@ -10,12 +10,21 @@ require 'approvedImages.class.php';
 
 	<div style='text-align:center'>
             <p></p>	
-<h1>Images Approved!</h1>
+<h3>Images Approved!</h3>
 <?php
  if(!empty($_POST['savedImages'])) { 
           
-        $approvedImages = new approvedImages();
+        $approvedImages = new approvedImages();        
+        
+        try{
         $approvedImages->insert_approved_images($_POST['savedImages']); 
+        }
+        catch(Exception $e){
+            
+            echo 'Error occurred:'. $e->getMessage();
+            die();
+        }
+        
 
 } else
 {

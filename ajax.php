@@ -5,7 +5,7 @@
 
      require_once 'instagram.class.php';
 
-        require 'instagram.config.php';
+     require 'instagram.config.php';
 
       // Receive AJAX request and create call object
       $tag = $_GET['tag'];

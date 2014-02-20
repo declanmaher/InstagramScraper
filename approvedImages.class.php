@@ -20,18 +20,17 @@ class approvedImages  {
     public function get_approved_images() {
         // images saved in txt file
      
-     if(file_exists('approvedImages.txt')){
-     try {
-     $lines = file("approvedImages.txt"); 
+     if(is_readable('approvedImages.txt')){
      
-     return $lines;
-     
-        }
-          catch (Exception $e) {
-             echo 'Caught exception: ',  $e->getMessage(), " \n";
-         }        
+     $lines = file("approvedImages.txt");     
+     return $lines;   
 
          }
+         
+      else{
+           throw new Exception("Error: The file for saving images is not readable.");
+      } 
+          
          
     }
     
@@ -41,7 +40,6 @@ class approvedImages  {
    * @param string $savedImages
    * 
    */
-
     function insert_approved_images($savedImages) {
 
          if(!empty($savedImages)) { 
@@ -51,9 +49,8 @@ class approvedImages  {
              echo 'No images to save.Please go back and save Images';
          }
 
-         if(file_exists('approvedImages.txt')){
-
-         try{        
+        if(is_readable('approvedImages.txt')){
+       
              if(!empty($pieces)) {        
                  //set file name to be written to
          $file ="approvedImages.txt";  
@@ -66,13 +63,13 @@ class approvedImages  {
          fwrite($fh, $stringnl);
             }
             fclose($fh);
-             }      
-         }
-          catch (Exception $e) {
-             echo 'Caught exception: ',  $e->getMessage(), " \n";
-         }       
+             }                      
 
-         }        
+         }     
+               else{
+           throw new Exception("Error: The file for saving images is not readable.");
+      } 
+          
     }    
     
 }

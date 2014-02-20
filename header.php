@@ -2,6 +2,12 @@
 <head>
   <meta charset="utf-8" />
   <title>Instagram Approval App</title>
+  
+<?php
+
+require 'errorandExceptionHandlers.php';
+
+?>
  
   <link rel="stylesheet" href="style.css" type="text/css" media="all" />
   
@@ -10,8 +16,7 @@
     $(document).ready(function() {
       $('#more').click(function() {
         var tag   = $(this).data('tag'),
-            maxid = $(this).data('maxid');
-            console.log(maxid);
+            maxid = $(this).data('maxid');            //console.log(maxid);
 
         $.ajax({
           type: 'GET',
@@ -44,7 +49,7 @@
     // set array for photos approved
       var allVals = [];  
         
-    // This function saves the images clicked by user
+    // This function saves the images clicked by user -to a textarea
   $('#photos').on( "click","img", function() {            
            allVals.push($(this).attr('src'));
            $(this).css("border","2px solid red");
