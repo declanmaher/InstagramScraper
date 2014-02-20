@@ -38,7 +38,11 @@ class approvedImages  {
    * @param string $savedImages
    * 
    */
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> f1b143821875c0370200f046e2e84e7545a90e45
     function insert_approved_images($savedImages) {
 
          if(!empty($savedImages)) { 

@@ -10,8 +10,12 @@ require 'approvedImages.class.php';
 
 	<div style='text-align:center'>
             <p></p>	
+<<<<<<< HEAD
 <h3>Images Approved!</h3>
 
+=======
+<h3>Images Approved</h3>
+>>>>>>> f1b143821875c0370200f046e2e84e7545a90e45
 <?php
  if(!empty($_POST['savedImages'])) { 
           
