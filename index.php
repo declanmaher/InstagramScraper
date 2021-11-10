@@ -17,7 +17,10 @@ if (!empty($_SESSION['userdetails']))
       // Display the login button
       $loginUrl = $instagram->getLoginUrl();
       echo "<a  href=\"$loginUrl\" class=\"button\">Sign in with Instagram</a>";
+	  
+	  //change to code
     ?>
+	
 
   </body>
 
